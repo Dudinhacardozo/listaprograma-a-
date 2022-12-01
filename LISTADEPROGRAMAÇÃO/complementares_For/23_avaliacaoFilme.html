@@ -1,0 +1,34 @@
+<script>
+    //PROBLEMA
+    /*
+    Desenvolva um programa que pergunte ao espectador a sua idade e a sua avaliação sobre o filme, sendo que deverá informar R para REGULAR e B para BOM.
+    Apresente os seguintes dados:
+    - A média de idade das pessoas que responderam que o filme era REGULAR
+    - A média de idade das pessoas que responderam que o filme era BOM
+    - A média de idade de todas as pessoas que assistiram ao filme
+    - O percentual de pessoas que classificou o filme como REGULAR
+    - O percentual de pessoas que classificou o filme como BOM
+    */
+
+let pessoas = Number(prompt("INFORME QUANTAS PESSOAS ASSISTIRAM O FILME?"));
+let quantpessoasregular = 0;
+let idadepessoasregular = 0;
+let quantpessoasbom = 0;
+let idadepessoasbom = 0;
+let idadepessoas = 0;
+
+for(let contador = 1; contador <= pessoas; contador++){
+    let idade = Number(prompt(`${contador} Informe sua idade`));
+    let avaliacao = prompt(`${contador}Informe R para REGULAR e B para BOM`).toUpperCase();
+    idadepessoas = idadepessoas + idade;
+    if (avaliacao === "R"){
+        quantpessoasregular++; 
+        idadepessoasregular = idadepessoasregular + idade
+    }else {
+    quantpessoasbom++;
+    idadepessoasbom = idadepessoasnom + idade;
+}};
+let pessoasregular = quantpessoasregular / pessoas *100;
+let pessoasfilmebom = quantpessoasbom / pessoas * 100;
+
+</script>

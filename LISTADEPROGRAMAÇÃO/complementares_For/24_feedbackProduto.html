@@ -1,0 +1,48 @@
+<script>
+    //PROBLEMA
+    /*
+    Considere que um novo produto foi lançado no mercado. Para saber se atendeu as expectativas dos consumidores, a empresa decidiu entrevistar 10 pessoas.
+    Peça para que seja informado o gênero da pessoa (M-Masculino ou F-Feminino). Também peça para responder se o produto atendeu as suas expectativas (S-Sim ou N-Não).
+    Ao final, apresente os seguintes dados:
+    - Número de pessoas que respondeu sim
+    - Número de pessoas que respondeu não
+    - Número de mulheres que respondeu sim
+    - Percentual de homens que responderam não entre todos os homens analisados
+    */
+
+    let mulheresSim = 0;
+    let homensNao = 0;
+    let mulheresNao = 0;
+    let homensSim = 0;
+    let homens = 0;
+    
+    for(contador=1; contador<=10; contador++){
+        const genero = prompt("Informe o gênero da pessoa (M-Masculino ou F-Feminino): ").toUpperCase();
+        const expectativas = prompt("Informe se o produto atendeu as suas expectativas (S-Sim ou N-Não): ").toUpperCase();  
+        if(genero === "F" && expectativas === "S"){
+            mulheresSim++
+        }
+        else if(genero === "F" && expectativas === "N"){
+            mulheresNao++
+        }
+        else if(genero === "M" && expectativas === "S"){
+            homensSim++
+            homens++
+        }
+        else if(genero === "M" && expectativas === "N"){
+            homensNao++
+            homens++
+        }
+    }
+    
+    const pessoasSim = mulheresSim + homensSim;
+    const pessoasNao = mulheresNao + homensNao;
+    const percentual = homensNao/homens;
+
+    document.write(`O número de pessoas que responderam sim: ${pessoasSim}</br>`);
+    document.write(`O número de pessoas que responderam não: ${pessoasNao}</br>`);
+    document.write(`Mulheres que responderam sim: ${mulheresSim}</br>`);
+    document.write(`O percentual de homens que respondeu não foi: ${percentual}`);
+    
+
+</script>

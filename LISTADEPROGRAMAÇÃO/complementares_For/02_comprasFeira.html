@@ -1,0 +1,61 @@
+<script>
+    //PROBLEMA
+    /*
+    Peça para o feirante informar a quantia de itens que foram vendidos de cada produto.
+    Considere que os itens que comercializa e os seus respectivos preços, são:
+    - Tomate: R$ 3,90 (Kg)
+    - Batata: R$ 3,40 (Kg)
+    - Batata-Doce: R$ 4,70 (Kg)
+    - Alface: R$ 1,50 (Und)
+    - Cebola: R$ 2,90 (Kg)
+    - Cebolinha: R$ 1,40 (Und)
+    - Beterraba: R$ 4,10 (Kg)
+
+    Após o usuário informar a quantia vendida para cada item, calcule e apresente o faturamento do feirante.
+    */
+    const tomate = Number(prompt("Informe a quantidade de tomates que foram vendidos em kg"));
+    const batata = Number(prompt("Informe a quantidade de batata que foram vendidos em kg"));
+    const batatadoce = Number(prompt("Informe a quantidade de batata doce que foram vendidos em kg"));
+    const alface= Number(prompt("Informe a quantidade de alface que foram vendidos em kg"));
+    const Cebola = Number(prompt("Informe a quantidade de cebola  que foram vendidos em kg"));
+    const cebolinha = Number(prompt("Informe a quantidade de cebola que foram vendidos em kg"));
+    const beterraba = Number(prompt("Informe a quantidade de beterraba que foram vendidos em kg"));
+    
+    let soma = 0;
+    const tomate$ = 3.90
+    const batata$ = 3.40
+    const batatadoce$ = 4.70
+    const alface$ = 1.50
+    const cebola$ = 2.90
+    const cebolinha$ = 1.40
+    const beterraba$ = 4.10
+    if (tomate > 0){
+        const precototalto = tomate * tomate$;
+        soma = soma + precototalto
+    }
+    else if (batata > 0){
+        const precototalba = batata * batata$
+        soma = soma + precototal
+    }
+    else if (batatadoce > 0){
+        const precototalbc = batatadoce * batatadoce$
+        soma = soma + precototal
+    }
+    else if (alface > 0){
+        const precototalaface = alface * alface$
+        soma = soma + precototal
+    }
+    else if (cebola > 0){
+        const precototalcebola = cebola * cebola$
+    soma = soma + precototal 
+    }
+    else if (cebolinha > 0){
+        const precototalcebolinha = cebolinha * cebolinha$
+        soma = soma + precototal
+    }
+    else if (beterraba > 0){
+        const precototalbeterraba = beterraba* beterraba$
+        soma = soma + precototal
+    }
+    document.write(`O faturamente do feirante fo foi $${soma}`);
+</script>

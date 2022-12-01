@@ -1,0 +1,37 @@
+<script>
+    //PROBLEMA
+    /*
+    Desenvolva um programa que receba o sexo e a idade de 10 pessoas.
+    Calcule e apresente:
+    - A média das idades das 10 pessoas
+    - A idade média das mulheres
+    - A idade média dos homens
+    */
+
+   //ENTRADA
+   let idadeMasculina = 0;
+   let idadeFeminina = 0;
+   let mediaMasculina = 0;
+let mediaFeminina = 0;
+
+    for(contador=1; contador<=10; contador++){
+        const sexo = prompt("Informe o sexo F-Feminino | M-Masculino").toUpperCase();
+        const idade = Number(prompt(`Informe a idade de ${i} para 10: `));
+        if(sexo === "M"){
+          idadeMasculina = idadeMasculina + idade
+          mediaMasculina++
+        }
+        else{
+            idadeFeminina = idadeFeminina + idade
+            mediaFeminina++
+        }
+    }
+
+    let mediaM = idadeMasculina/mediaMasculina;
+    let mediaF = idadeFeminina/mediaFeminina;
+
+    document.write(`A média da idade das mulheres é: ${mediaFeminina}</br>`);
+    document.write(`A média da idade os homens é: ${mediaMasculina}`);
+
+</script>
+</script>
